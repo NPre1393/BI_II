@@ -1,0 +1,14 @@
+"""
+                                    if counter > 0:
+                                        #writeToFile(prods)
+                                        print(prods)
+                                        prods = {}
+                                        counter = 0
+                                    counter += 1
+                                    for key in item['event']['list']['data_receiver'][0]['data']['raw'].keys():
+                                        prods[key] = {}
+                                        for key2 in item['event']['list']['data_receiver'][0]['data']['raw'][key].keys():
+                                            prods[key][key2] = item['event']['list']['data_receiver'][0]['data']['raw'][key][key2]
+                                            #print(item['event']['list']['data_receiver'][0]['data']['raw'][key][key2])
+                                    #print(str(item['event']['list']['data_receiver'][0]['data']['raw'].keys()))    
+                                    """

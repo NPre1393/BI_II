@@ -1,0 +1,20 @@
+bar change -> time stamps, similar patterns
+
+entrypoints changes 
+comment manual measurements
+time series analysis for gaps
+
+
+lvl1 file -> qr codes & lvl2 processes
+lvl2 processes -> qr codes % lvl3 machining
+                  dataelements/change, a2, data_values: qr, qc1
+                  dataelements/change, a3, data_values: qr, qc1, qc2
+lvl3           -> time series: a1 machining start activity/calling, a1 activity/done (-> dataelements/change, finished)
+lvl4 processes -> fetch, a1, activity/receiving, data_receiver -> data -> name, value
+
+
+actToolLength over all parts, when reset -> tool change
+driveLoad -> time for active machining
+conformance checking
+
+

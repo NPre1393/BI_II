@@ -1,0 +1,10 @@
+                s           o
+Walk            4
+Ubahn           2
+Straßenbahn     1
+
+["trace:id":str,"qr":uint16,"status":str,"comment","manual_measure1","manual_measure2","manual_measure3","ZylinderB_Durchmesser_status",
+"ZylinderB_Durchmesser","ZylinderB_Zylinderform_status","ZylinderB_Zylinderform","Kreis1_MitteZ_status","Kreis1_MitteZ","Kreis1_Durchmesser_status",
+"Kreis1_Durchmesser","Kreis2_MitteZ_status","Kreis2_MitteZ","Kreis2_Durchmesser_status","Kreis2_Durchmesser","Distanz_status", "Distanz"]
+
+[926, 386, 929] not in prod_qrs
