@@ -2,10 +2,13 @@ from yaml import load_all
 
 def query_machining(stream, info):
     queue_id = []
+    """
     if type(info) == list:
         operations = {}
     else:
         operations = []
+    """
+    operations = {key: [] for key in info}
     for item in stream:
         for i, t in enumerate(item.keys()):
             if t == 'event':
@@ -14,8 +17,10 @@ def query_machining(stream, info):
                         if 'list' in item['event'].keys():
                             if item['event']['list']['data_receiver'][0]['data']: 
                                 for op in item['event']['list']['data_receiver'][0]['data']:
-                                    if op['name'] == info:
-                                        operations.append((op['value'], op['timestamp']))
+                                    if op['name'] in info:
+                                        operations[op['name']].append((op['value'], op['timestamp']))
+                                        #operations.append((op['value'], op['timestamp']))
+
                 if item['event']['id:id'] == 'external':
                     if item['event']['cpee:lifecycle:transition'] == 'dataelements/change':
                         if 'list' in item['event'].keys():
